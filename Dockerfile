@@ -1,8 +1,8 @@
 # ----------------------------------
-# Environment: debian:buster-slim
+# Environment: alpine:latest
 # Minimum Panel Version: 1.X
 # ----------------------------------
-FROM debian:buster-slim
+FROM alpine:latest
 
 LABEL author="Jimmi Hansen" maintainer="jimmi@xevotech.com"
 
