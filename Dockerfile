@@ -9,11 +9,9 @@ LABEL author="Jimmi Hansen" maintainer="jimmi@xevotech.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 ## add container user
-RUN useradd -m -d /home/container -s /bin/bash container
-
-RUN ln -s /home/container/ /nonexistent
-
-ENV USER=container HOME=/home/container
+USER        container
+ENV         USER=container HOME=/home/container
+WORKDIR     /home/container
 
 ## update base packages
 RUN apt update \
