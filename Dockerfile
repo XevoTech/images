@@ -14,6 +14,7 @@ RUN   useradd -m -d /home/container -s /bin/bash container
 ## update base packages
 RUN   apt-get update \
  &&   apt-get upgrade -y
+ # 
 
 ## install dependencies
 RUN   apt-get install -y gcc g++ libgcc1 lib32gcc1 gdb libc6 libstdc++6 git wget curl tar zip unzip binutils xz-utils liblzo2-2 bzip2 zlib1g iproute2 net-tools netcat telnet libatomic1 libsdl1.2debian libsdl2-2.0-0 \
