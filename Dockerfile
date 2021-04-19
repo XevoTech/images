@@ -2,7 +2,7 @@
 # Environment: ubuntu
 # Minimum Panel Version: 1.X
 # ----------------------------------
-FROM debian:buster-slim
+FROM debian:buster
 
 LABEL author="Jimmi Hansen" maintainer="jimmi@xevotech.com"
 
